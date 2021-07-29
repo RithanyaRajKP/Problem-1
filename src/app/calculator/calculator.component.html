@@ -1,0 +1,38 @@
+<div class="paddings">
+  <table>
+    <th>Calculator</th>
+    <tr>
+      <td>Enter number</td>
+      <td><input type="number" [(ngModel)]="a"></td>
+    </tr>
+    <tr>
+      <td>Enter number</td>
+      <td><input type="number" [(ngModel)]="b"></td>
+      <td><button type="button" class="btn btn-info" (click)="submitclicked('~')">Reset</button></td>
+    </tr>
+  </table>
+    <br>
+
+  <table>
+    <tr>
+      <td><button type="button" class="btn btn-info" (click)="submitclicked('+')">Add</button></td>
+      <td><button type="button" class="btn btn-info" (click)="submitclicked('-')">Subtract</button></td>
+      <td><button type="button" class="btn btn-info" (click)="submitclicked('*')">Multiplication</button></td>
+      <td><button type="button" class="btn btn-info" (click)="submitclicked('/')">Divide</button></td>
+    </tr>
+  </table>
+</div>
+
+<div class="paddings">
+  <table>
+    <tr><td>Result : </td>
+      <td>{{result}}</td>
+
+    </tr>
+
+  </table>
+  </div>
+
+
+
+
